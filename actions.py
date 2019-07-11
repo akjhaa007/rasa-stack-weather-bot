@@ -29,4 +29,4 @@ class ActionWeather(Action):
         response = """It is currently {} in {} at the moment. The temperature is {}  degree the humidity is {}% and the wind speed  is {} mph.""".format(condition,city,temperature_c,humidity,wind_mph)
 
         dispatcher.utter_message(response)
-        return [SlotSet('location',loc)]
+        return [SlotSet('location',loc)] 
